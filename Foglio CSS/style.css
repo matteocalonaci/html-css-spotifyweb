@@ -1,0 +1,419 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    width: 100%;
+    height: 1vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+/* HEADER */
+
+
+/* HEADER - HOME SEARCH LIBRERIA */
+header {
+    position: sticky;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background-color: red;
+    width: 18rem;
+}
+
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 18rem;
+    padding: 1rem;
+    background-color: black;
+    max-height: 40rem;
+}
+
+.sidebar .logo img {
+    width: 10rem;
+}
+
+.sidebar .navigation ul {
+    list-style: none;
+    margin-top: 0.5rem;
+}
+
+.sidebar .navigation ul li {
+    padding: 0.5rem 0;
+}
+
+.sidebar .navigation ul li a {
+    color: rgba(255, 255, 255, 0.700);
+    text-decoration: none;
+}
+
+.sidebar .navigation ul li a:hover {
+    color: white;
+    padding-left: 0.5rem;
+    border-left: 0.1rem solid rgb(173, 255, 47);
+}
+
+
+
+
+
+
+
+
+
+
+/* HEADER -PLAYLIST */
+
+
+.playlist-bar h3 {
+    color: rgba(255, 255, 255, 0.700);
+    padding: 1rem 0;
+}
+
+.playlist-bar a {
+    display: flex;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.700);
+    text-decoration: none;
+    line-height: 2rem;
+    font-size: 0.8rem;
+}
+
+.add-playlist .fa-square-plus {
+    display: flax;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.add-playlist .title-playlist {
+    font-size: 1rem;
+    padding: 0.5rem;
+}
+
+.sidebar .playlist-bar .add-playlist a:hover {
+    color: white;
+    padding-left: 0.5rem;
+    border-left: 0.1rem solid rgb(173, 255, 47);
+}
+
+
+.sidebar .playlist-bar ul li a:hover {
+    color: white;
+    padding-left: 0.5rem;
+    border-left: 0.1rem solid rgb(173, 255, 47);
+}
+
+
+
+
+
+
+
+
+
+
+/* HEADER - ACCOUNT */
+
+
+.sidebar .spotify-account {
+    padding: 2rem 0;
+    color: rgba(255, 255, 255, 0.700);
+}
+
+.sidebar .spotify-account a {
+    color: rgba(255, 255, 255, 0.700);
+    text-decoration: none;
+}
+
+.sidebar .spotify-account a:hover {
+    color: white;
+    padding-left: 0.5rem;
+    border-left: 0.1rem solid rgb(173, 255, 47);
+}
+
+.spotify-account .account {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+    border-top: 0.1rem solid rgba(255, 255, 255, 0.700);
+}
+
+.spotify-account .account-img {
+    width: 2rem;
+    height: 2rem;
+}
+
+.spotify-account .account-img img {
+    width: 100%;
+    background-color: gray;
+    border-radius: 100%;
+}
+
+.spotify-account .account span {
+    padding: 1rem 0.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* MAIN */
+
+
+main {
+    background-color: yellow;
+    min-height: 45rem;
+    overflow-y: scroll;
+}
+
+
+
+
+
+
+
+/* FOOTER */
+
+
+footer {
+    height: 6rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* FOOTER SX */
+
+
+.footer-container .sx {
+    height: 6rem;
+    width: 33.33%;
+    background-color: rgb(40, 40, 40);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.sx .picture-sx {
+    width: 3rem;
+    height: 3rem;
+    background-color: aquamarine;
+    margin: 0 1rem;
+}
+
+.sx .picture-sx img {
+    width: 100%;
+}
+
+.footer-container .sx .nome-brano {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-container .sx .nome-brano h4 {
+    color: white;
+}
+
+.footer-container .sx .nome-brano p {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.700);
+}
+
+.footer-container .sx .icons {
+    margin: 0 3rem;
+}
+
+.footer-container .sx .icons span {
+    padding: 0 0.3rem;
+    color: rgba(255, 255, 255, 0.700);
+}
+
+.footer-container .sx .icons span:hover {
+    color: rgb(173, 255, 47);
+}
+
+
+
+
+
+
+
+
+
+
+/* FOOTER CENTER */
+
+
+.footer-container .center {
+    height: 6rem;
+    width: 33.33%;
+    background-color: rgb(40, 40, 40);
+}
+
+
+.footer-container .center {
+    height: 6rem;
+}
+
+.footer-container .center .play {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    padding-top: 1rem;
+
+}
+
+.footer-container .center .play span {
+    color: rgba(255, 255, 255, 0.700);
+    padding: 0 1rem;
+}
+
+.footer-container .center .play span:hover {
+    color: white;
+}
+
+.footer-container .center .play .fa-circle-play {
+    color: rgba(255, 255, 255, 0.700);
+    font-size: 2rem;
+}
+
+.footer-container .center .time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+
+}
+
+.footer-container .center .time span {
+    color: rgba(255, 255, 255, 0.700);
+    font-size: 0.7rem;
+
+}
+
+.footer-container .center .time .barra-musicale {
+    height: 0.3rem;
+    width: 20rem;
+    border-radius: 2rem;
+    margin: 0 1rem;
+    background-color: rgba(90, 90, 90);
+}
+
+.time .barra-musicale .tempo-ascolto {
+    display: flex;
+    justify-content: flex-start;
+    height: 0.3rem;
+    width: 4.5rem;
+    background-color: rgba(255, 255, 255, 0.700);
+    border-radius: 2rem;
+
+}
+
+
+
+
+
+
+
+
+
+
+/* FOOTER DX */
+
+
+.footer-container .dx {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 6rem;
+    width: 33.33%;
+    background-color: rgb(40, 40, 40);
+}
+
+.footer-container .dx .volume {
+    height: 0.3rem;
+    width: 10rem;
+    background-color: rgba(90, 90, 90);
+    margin: 0.5rem 1rem;
+    border-radius: 2rem;
+}
+
+.footer-container .dx .volume .volume-high {
+    display: flex;
+    justify-content: flex-start;
+    height: 0.3rem;
+    width: 2.5rem;
+    background-color: rgba(255, 255, 255, 0.700);
+    border-radius: 2rem;
+}
+
+.footer-container .dx .icons a {
+    color: rgba(255, 255, 255, 0.700);
+    margin: 0 0.4rem;
+}
+
+.footer-container .dx .icons a:hover {
+    color: rgb(173, 255, 47);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media-query */
+
+@media screen and (max-width: 768px) {}
+
+@media screen and (max-width: 480px) {}
+
+@media screen and (max-width: 360px) {}
