@@ -9,6 +9,8 @@ body {
     width: 100%;
     height: 1vh;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    align-self: center;
 }
 
 
@@ -30,7 +32,7 @@ header {
     top: 0;
     bottom: 0;
     background-color: red;
-    width: 18rem;
+    width: 25%;
 }
 
 .sidebar {
@@ -38,7 +40,7 @@ header {
     left: 0;
     top: 0;
     bottom: 0;
-    width: 18rem;
+    width: 20%;
     padding: 1rem;
     background-color: black;
     max-height: 40rem;
@@ -181,14 +183,319 @@ header {
 /* MAIN */
 
 
+
+/* MAIN - UPGRADE */
+
+
 main {
-    background-color: yellow;
+    background-color: rgb(20, 25, 34);
     min-height: 45rem;
     overflow-y: scroll;
+    min-width: 75%;
+    position: sticky;
+}
+
+.upgrade {
+    height: 5rem;
+    background-color: rgb(8, 11, 18);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+.upgrade .upgrade-button {
+    padding: 1rem;
+}
+
+.upgrade .upgrade-button button {
+    padding: 0.8rem 2rem;
+    border-radius: 5rem;
+    color: white;
+    background-color: rgb(8, 11, 18);
+    border: 0.1rem solid white;
+
 }
 
 
 
+
+
+
+
+
+
+
+
+/* MAIN - NAVBAR */
+
+
+
+.navbar {
+    min-height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(20, 25, 34);
+
+}
+
+.navbar span {
+    color: rgba(255, 255, 255, 0.700);
+    padding: 0.5rem 0.5rem;
+    font-size: 0.8rem;
+
+}
+
+.navbar span:hover {
+    color: white;
+    border-bottom: 0.1rem solid rgb(173, 255, 47);
+
+}
+
+
+
+
+
+
+
+
+
+
+/* MAIN -CARDS */
+
+/* ROW-RECENTLY */
+
+.row-recently h2 {
+    padding: 1rem;
+    color: white;
+}
+
+
+
+.cards-container {
+    width: calc(100% / 6 -12rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 0.5rem;
+}
+
+.cards-container .cards {
+    width: 34%;
+    padding: 1rem 0.5rem;
+
+}
+
+.cards-container .cards .cards-image img {
+    width: 100%;
+}
+
+.cards-container .cards .cards-text {
+    display: flex;
+    justify-content: top;
+    align-items: center;
+    flex-direction: column;
+    min-height: 7rem;
+}
+
+.cards-container .cards .cards-text p {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.700);
+}
+
+.cards-container .cards .cards-text h4 {
+    color: white;
+}
+
+.cards-container .cards .cards-text h4:hover {
+    color: rgb(173, 255, 47);
+}
+
+.cards-container .cards .hidden {
+    position: relative;
+}
+
+.cards-container .cards .hidden .hide {
+    position: absolute;
+    top: 4rem;
+    right: 4.5rem;
+    font-size: 3rem;
+    color: white;
+    display: none;
+}
+
+.cards-container .hidden .cards-image:hover+.hide {
+    display: block;
+}
+
+
+
+
+
+
+/* ROW-CREATED */
+
+.row-created h2 {
+    padding: 0.5rem 1rem;
+    color: white;
+}
+
+.row-created p {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.700);
+
+}
+
+.row-created p {
+    padding: 0.5rem 1rem;
+}
+
+.cards-container-created {
+    width: 34%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 0.5rem;
+}
+
+.cards-container-created .cards {
+    padding: 1rem 0.5rem;
+
+}
+
+.cards-container-created .cards .cards-image img {
+    width: 100%;
+}
+
+.cards-container-created .cards .cards-text {
+    display: flex;
+    justify-content: top;
+    align-items: center;
+    flex-direction: column;
+    min-height: 4.5rem;
+}
+
+.cards-container-created .cards .cards-text p {
+    font-size: rem;
+    color: rgba(255, 255, 255, 0.700);
+}
+
+
+.cards-container-created .cards .cards-text h4 {
+    color: white;
+}
+
+
+.cards-container-created .cards .cards-text h4:hover {
+    color: rgb(173, 255, 47);
+}
+
+
+.cards-container-created .cards .hidden {
+    position: relative;
+}
+
+.cards-container-created .cards .hidden .hide {
+    position: absolute;
+    top: 4rem;
+    right: 4.5rem;
+    font-size: 3rem;
+    color: white;
+    display: none;
+}
+
+.cards-container-created .hidden .cards-image:hover+.hide {
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ROW-POP-ARTIST */
+.row-pop-artist h2 {
+    padding: 0.5rem 1rem;
+    color: white;
+}
+
+.row-pop-artist p {
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.700);
+}
+
+.cards-container-artist {
+    width: 34%;
+    display: flex;
+    justify-content: top;
+    align-items: center;
+    flex-direction: row;
+    padding: 0.5rem;
+    margin-bottom: 10rem;
+}
+
+.cards-container-artist .cards {
+    padding: 1rem 0.5rem;
+
+}
+
+.cards-container-artist .cards .cards-image img {
+    width: 100%;
+    border-radius: 100%;
+}
+
+.cards-container-artist .cards .cards-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 4rem;
+}
+
+.cards-container-artist .cards .cards-text p {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.700);
+}
+
+
+.cards-container-artist .cards .cards-text h4 {
+    color: white;
+}
+
+.cards-container-artist .cards .cards-text h4:hover {
+    color: rgb(173, 255, 47);
+}
+
+.cards-container-artist .cards .hidden {
+    position: relative;
+}
+
+.cards-container-artist .cards .hidden .hide {
+    position: absolute;
+    top: 4rem;
+    right: 4.5rem;
+    font-size: 3rem;
+    color: white;
+    display: none;
+}
+
+.cards-container-artist .hidden .cards-image:hover+.hide {
+    display: block;
+}
 
 
 
