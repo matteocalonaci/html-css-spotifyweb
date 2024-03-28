@@ -32,18 +32,17 @@ header {
     top: 0;
     bottom: 0;
     background-color: red;
-    width: 25%;
+    width: 20rem;
 }
 
 .sidebar {
-    position: fixed;
+    position: sticky;
     left: 0;
     top: 0;
     bottom: 0;
-    width: 20%;
+    width: 18rem;
     padding: 1rem;
     background-color: black;
-    max-height: 40rem;
 }
 
 .sidebar .logo img {
@@ -191,7 +190,6 @@ main {
     background-color: rgb(20, 25, 34);
     min-height: 45rem;
     overflow-y: scroll;
-    min-width: 75%;
     position: sticky;
 }
 
@@ -274,7 +272,6 @@ main {
 
 
 .cards-container {
-    width: calc(100% / 6 -12rem);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -283,7 +280,7 @@ main {
 }
 
 .cards-container .cards {
-    width: 34%;
+    width: calc(100% / 6);
     padding: 1rem 0.5rem;
 
 }
@@ -379,13 +376,16 @@ main {
 }
 
 .cards-container-created .cards .cards-text p {
-    font-size: rem;
+    text-align: center;
+    font-size: 0.8rem;
     color: rgba(255, 255, 255, 0.700);
 }
 
 
 .cards-container-created .cards .cards-text h4 {
     color: white;
+    display: flex;
+    text-align: center;
 }
 
 
@@ -718,9 +718,3 @@ footer {
 
 
 /* media-query */
-
-@media screen and (max-width: 768px) {}
-
-@media screen and (max-width: 480px) {}
-
-@media screen and (max-width: 360px) {}

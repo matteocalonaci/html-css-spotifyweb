@@ -1,0 +1,77 @@
+/* media-query */
+
+@media screen and (max-width: 768px) {
+    body {
+        background-color: red;
+        width: 768px;
+    }
+
+    header {
+        width: 13rem;
+        height: 40rem;
+    }
+
+    .playlist-bar a {
+        line-height: 1rem;
+    }
+
+    .navbar span {
+        font-size: 0.7rem;
+    }
+
+    .cards-container {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+
+    }
+
+    .cards-container .cards {
+        width: calc(100% / 4);
+        padding: 1rem 0.5rem;
+
+    }
+
+    .cards-container .cards .cards-text {
+        font-size: 0.8rem;
+        text-align: center;
+        min-height: 3rem;
+    }
+
+    .cards-container .cards .cards-text p {
+        font-size: 0.5rem;
+        text-align: center;
+    }
+
+
+    .cards-container-created {
+        width: 51.5%;
+
+    }
+
+    .cards-container-artist {
+        width: 51.5%;
+    }
+
+    /* footer */
+    .footer-container .sx .icons {
+        margin: 0 0.2rem;
+    }
+
+    .footer-container .dx .icons a {
+        margin: 0 0.2rem;
+    }
+
+    .footer-container .dx .volume {
+        width: 8rem;
+    }
+
+}
+
+
+
+
+@media screen and (max-width: 490px) {}
+
+@media screen and (max-width: 390px) {
+    body {}
+}
