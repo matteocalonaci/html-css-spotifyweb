@@ -1,15 +1,11 @@
 /* media-query */
 
-@media screen and (max-width: 768px) {
+
+@media screen and (max-width: 1024px) {
     body {
-        background-color: red;
-        width: 768px;
+        width: 1024px;
     }
 
-    header {
-        width: 13rem;
-        height: 40rem;
-    }
 
     .playlist-bar a {
         line-height: 1rem;
@@ -31,6 +27,12 @@
 
     }
 
+    .cards-container .cards .hidden .hide {
+        position: absolute;
+        top: 3.5rem;
+        right: 3.5rem;
+    }
+
     .cards-container .cards .cards-text {
         font-size: 0.8rem;
         text-align: center;
@@ -48,8 +50,111 @@
 
     }
 
+    .cards-container-created .cards .hidden .hide {
+        position: absolute;
+        top: 3.5rem;
+        right: 3.5rem;
+    }
+
+
     .cards-container-artist {
         width: 51.5%;
+    }
+
+    .cards-container-artist .cards .hidden .hide {
+        position: absolute;
+        top: 3.5rem;
+        right: 3.5rem;
+    }
+
+    /* footer */
+    .footer-container .sx .icons {
+        margin: 0 0.2rem;
+    }
+
+    .footer-container .dx .icons a {
+        margin: 0 0.2rem;
+    }
+
+    .footer-container .dx .volume {
+        width: 8rem;
+    }
+
+}
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    body {
+        width: 768px;
+    }
+
+    .playlist-bar a {
+        line-height: 1rem;
+    }
+
+    .navbar {
+        flex-wrap: wrap;
+    }
+
+    .navbar span {
+        font-size: 0.7rem;
+        padding: 0.5rem 2.5rem;
+    }
+
+    .cards-container {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+
+    }
+
+    .cards-container .cards {
+        width: calc(100% / 2);
+        padding: 1rem 0.5rem;
+
+    }
+
+    .cards-container .cards .cards-text {
+        font-size: 0.8rem;
+        text-align: center;
+        min-height: 3rem;
+    }
+
+    .cards-container .cards .cards-text p {
+        font-size: 0.5rem;
+        text-align: center;
+    }
+
+    .cards-container .cards .hidden .hide {
+        position: absolute;
+        top: 5rem;
+        right: 5.5rem;
+    }
+
+    .cards-container-created {
+        width: 100%;
+
+    }
+
+    .cards-container-created .cards .hidden .hide {
+        position: absolute;
+        top: 5rem;
+        right: 5.5rem;
+    }
+
+
+
+    .cards-container-artist {
+        width: 100%;
+    }
+
+    .cards-container-artist .cards .hidden .hide {
+        position: absolute;
+        top: 5rem;
+        right: 5.5rem;
     }
 
     /* footer */
