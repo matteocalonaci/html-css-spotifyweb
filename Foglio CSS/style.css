@@ -73,6 +73,11 @@ header {
 
 /* HEADER -PLAYLIST */
 
+.playlist-bar .playlist-overflow {
+    height: 15rem;
+    overflow: auto;
+}
+
 
 .playlist-bar h3 {
     color: rgba(255, 255, 255, 0.700);
@@ -698,19 +703,3 @@ footer {
 .footer-container .dx .icons a:hover {
     color: rgb(173, 255, 47);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* media-query */
